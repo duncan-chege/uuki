@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 
 <head>
+    <base href='/uuki/live/'>
     <title> UUKI Website</title>
     <link rel='stylesheet' type='text/css' href='assets/css/main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='assets/js/angular.js'></script>
+    <script src="assets/js/angular-ui-router.js"></script>
+    <script src='assets/js/app.js'></script>
 </head>
 
-<body>
+<body ng-app='myApp'>
 
-    <script src='assets/js/app.js'></script>
+    <header>
+        <div class='menu'>
+            <div class='menu__items'>
+                <h3>LOGIN</h3>
+                <h3>CONTACT</h3>
+                <h3>MY ACCOUNT</h3>
+            </div>
+        </div>
+
+        <div class='navbar'>
+            <h1 class='navbar__zuri'> ZURI </h1>
+
+            <div class='navbar__items'>
+                <div class='first'>
+                    <a ui-sref='raw-honey'>Raw Honey <img src="assets/images/down-arrow.png"></a>
+                </div>
+
+                <div class='second'>
+                    <a ui-sref='flavoured-honey'>Flavoured Honey<img src="assets/images/down-arrow.png"></a>
+                </div>
+
+                <div class='third'>
+                    <a ui-sref='honey-products'>Honey Products<img src="assets/images/down-arrow.png"></a>
+                </div>
+            </div>
+
+            <h2 class='navbar__uuki'>UUKI</h2>
+        </div>
+
+        <ui-view></ui-view>
+
+    </header>
 </body>
 
 </html>
