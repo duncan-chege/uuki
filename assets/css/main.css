@@ -7,6 +7,84 @@
   margin: 0;
   transition-duration: 500ms; }
 
+.product-details {
+  position: relative;
+  top: 100px;
+  width: 400px;
+  padding-left: 48px;
+  border-right: 2px solid #bbbbbb;
+  height: calc(100vh - 220px); }
+  .product-details p {
+    color: rgba(34, 34, 34, 0.54); }
+  .product-details .product-details__price {
+    font-size: 24px; }
+  .product-details .product-details__size {
+    padding: 24px 0;
+    font-size: 18px; }
+  .product-details .product-details__quantities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    border-top: 1px solid lightgray; }
+    .product-details .product-details__quantities .quarter,
+    .product-details .product-details__quantities .half,
+    .product-details .product-details__quantities .full,
+    .product-details .product-details__quantities .twice {
+      padding: 20px;
+      position: relative; }
+    .product-details .product-details__quantities .quarter::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: rgba(253, 210, 22, 0.87);
+      top: 0;
+      left: 0;
+      width: 100%; }
+  .product-details .product-details__title {
+    padding-top: 24px; }
+  .product-details .product-details__selection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 12px;
+    width: 25%; }
+    .product-details .product-details__selection .add,
+    .product-details .product-details__selection .minus {
+      width: 20px;
+      height: 20px; }
+    .product-details .product-details__selection .number {
+      background-color: #bbbbbb;
+      width: 20px;
+      height: 20px;
+      text-align: center; }
+  .product-details .product-details__buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 48px;
+    width: 70%; }
+    .product-details .product-details__buttons .bag {
+      background-color: rgba(253, 210, 22, 0.87);
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer; }
+    .product-details .product-details__buttons .out {
+      background-color: white;
+      padding: 10px 15px;
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+      border: 2px solid #bbbbbb;
+      cursor: pointer; }
+
+.honey-details {
+  padding-top: 100px; }
+
 header .menu {
   background-color: rgba(34, 34, 34, 0.12);
   position: fixed;
@@ -58,98 +136,38 @@ header .sub-navbar {
   display: grid;
   grid-template-columns: 6fr 1fr;
   padding: 4px; }
-  header .sub-navbar .raw__products {
+  header .sub-navbar .raw__products, header .sub-navbar .flavoured__products, header .sub-navbar .honey__products {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 48px; }
-    header .sub-navbar .raw__products .first,
-    header .sub-navbar .raw__products .second,
-    header .sub-navbar .raw__products .third,
-    header .sub-navbar .raw__products .forth,
-    header .sub-navbar .raw__products .fifth,
-    header .sub-navbar .raw__products .sixth {
-      display: flex;
-      flex-direction: column;
-      padding: 8px; }
-      header .sub-navbar .raw__products .first a,
-      header .sub-navbar .raw__products .second a,
-      header .sub-navbar .raw__products .third a,
-      header .sub-navbar .raw__products .forth a,
-      header .sub-navbar .raw__products .fifth a,
-      header .sub-navbar .raw__products .sixth a {
-        text-decoration: none;
-        color: rgba(34, 34, 34, 0.38);
-        font-size: 14px;
-        padding-top: 4px; }
-      header .sub-navbar .raw__products .first img,
-      header .sub-navbar .raw__products .second img,
-      header .sub-navbar .raw__products .third img,
-      header .sub-navbar .raw__products .forth img,
-      header .sub-navbar .raw__products .fifth img,
-      header .sub-navbar .raw__products .sixth img {
-        width: 28px;
-        height: 24px; }
-  header .sub-navbar .flavoured__products {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 48px; }
-    header .sub-navbar .flavoured__products .first,
-    header .sub-navbar .flavoured__products .second,
-    header .sub-navbar .flavoured__products .third,
-    header .sub-navbar .flavoured__products .forth,
-    header .sub-navbar .flavoured__products .fifth,
-    header .sub-navbar .flavoured__products .sixth {
+    header .sub-navbar .raw__products a, header .sub-navbar .flavoured__products a, header .sub-navbar .honey__products a {
+      text-decoration: none;
       color: rgba(34, 34, 34, 0.38);
-      padding: 8px;
-      text-align: center; }
-      header .sub-navbar .flavoured__products .first p,
-      header .sub-navbar .flavoured__products .second p,
-      header .sub-navbar .flavoured__products .third p,
-      header .sub-navbar .flavoured__products .forth p,
-      header .sub-navbar .flavoured__products .fifth p,
-      header .sub-navbar .flavoured__products .sixth p {
-        font-size: 14px; }
-      header .sub-navbar .flavoured__products .first img,
-      header .sub-navbar .flavoured__products .second img,
-      header .sub-navbar .flavoured__products .third img,
-      header .sub-navbar .flavoured__products .forth img,
-      header .sub-navbar .flavoured__products .fifth img,
-      header .sub-navbar .flavoured__products .sixth img {
-        display: inline-block;
-        width: 28px;
-        height: 24px; }
-  header .sub-navbar .honey__products {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 48px; }
-    header .sub-navbar .honey__products .first,
-    header .sub-navbar .honey__products .second,
-    header .sub-navbar .honey__products .third,
-    header .sub-navbar .honey__products .forth,
-    header .sub-navbar .honey__products .fifth,
-    header .sub-navbar .honey__products .sixth {
-      color: rgba(34, 34, 34, 0.38);
-      padding: 8px;
-      text-align: center; }
-      header .sub-navbar .honey__products .first p,
-      header .sub-navbar .honey__products .second p,
-      header .sub-navbar .honey__products .third p,
-      header .sub-navbar .honey__products .forth p,
-      header .sub-navbar .honey__products .fifth p,
-      header .sub-navbar .honey__products .sixth p {
-        font-size: 14px; }
-      header .sub-navbar .honey__products .first img,
-      header .sub-navbar .honey__products .second img,
-      header .sub-navbar .honey__products .third img,
-      header .sub-navbar .honey__products .forth img,
-      header .sub-navbar .honey__products .fifth img,
-      header .sub-navbar .honey__products .sixth img {
-        display: inline-block;
-        width: 28px;
-        height: 24px; }
+      font-size: 14px;
+      padding-top: 4px; }
+      header .sub-navbar .raw__products a .first,
+      header .sub-navbar .raw__products a .second,
+      header .sub-navbar .raw__products a .third,
+      header .sub-navbar .raw__products a .forth,
+      header .sub-navbar .raw__products a .fifth,
+      header .sub-navbar .raw__products a .sixth, header .sub-navbar .flavoured__products a .first,
+      header .sub-navbar .flavoured__products a .second,
+      header .sub-navbar .flavoured__products a .third,
+      header .sub-navbar .flavoured__products a .forth,
+      header .sub-navbar .flavoured__products a .fifth,
+      header .sub-navbar .flavoured__products a .sixth, header .sub-navbar .honey__products a .first,
+      header .sub-navbar .honey__products a .second,
+      header .sub-navbar .honey__products a .third,
+      header .sub-navbar .honey__products a .forth,
+      header .sub-navbar .honey__products a .fifth,
+      header .sub-navbar .honey__products a .sixth {
+        display: flex;
+        flex-direction: column;
+        padding: 8px; }
+    header .sub-navbar .raw__products img, header .sub-navbar .flavoured__products img, header .sub-navbar .honey__products img {
+      width: 28px;
+      height: 24px; }
   header .sub-navbar img {
     width: 30px;
     height: 24px;

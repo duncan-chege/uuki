@@ -1,0 +1,105 @@
+.product-details {
+    position: relative;
+    top: 100px;
+    width: 400px;
+    padding-left: 48px;
+    border-right: 2px solid #bbbbbb;
+    height: calc(100vh - 220px);
+
+    p {
+        color: $text-color;
+    }
+
+    .product-details__price {
+        font-size: 24px;
+    }
+
+    .product-details__size {
+        padding: 24px 0;
+        font-size: 18px;
+    }
+
+    .product-details__quantities {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        border-top: 1px solid $subnavbar-color;
+
+        .quarter,
+        .half,
+        .full,
+        .twice {
+            padding: 20px;
+            position: relative;
+        }
+
+        .quarter::after {
+            position: absolute;
+            content: '';
+            height: 3px;
+            background-color: $navcolor;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .product-details__title {
+        padding-top: 24px;
+    }
+
+    .product-details__selection {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-top: 12px;
+        width: 25%;
+
+
+        .add,
+        .minus {
+            width: 20px;
+            height: 20px;
+        }
+
+        .number {
+            background-color: #bbbbbb;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+        }
+    }
+
+    .product-details__buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-top: 48px;
+        width: 70%;
+
+        .bag {
+            background-color: $navcolor;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 12px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .out {
+            background-color: white;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 12px;
+            text-decoration: none;
+            border: 2px solid #bbbbbb;
+            cursor: pointer;
+        }
+    }
+}
+
+.honey-details{
+    padding-top: 100px;
+}
