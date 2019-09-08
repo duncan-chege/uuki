@@ -1,23 +1,60 @@
 <div ng-include=" 'menu-views/raw-honey.html' "></div>
 
-<div class='product-details'>
-    <p class='product-details__price'> Ksh 2,000.00</p>
-    <p class='product-details__size'> Size </p>
+<div class='product-desc'>
+    <div class='product-text'>
+        <p class='product-text__price'> Ksh 2,000.00</p>
+        <p class='product-text__size'> Size </p>
+
+        <div class='product-text__quantities'>
+            <p class='quarter'>250g</p>
+            <p class='half'>500g</p>
+            <p class='full'>1kg</p>
+            <p class='twice'>2kg</p>
+        </div>
+        <p class='product-text__title'> Quantity</p>
+        <div class='product-text__selection'>
+            <img src='assets/images/add.svg' class='add'>
+            <div class='number'>2</div>
+            <img src='assets/images/minus.svg' class='minus'>
+        </div>
+        <div class='product-text__buttons'>
+            <button class="bag"> ADD TO BAG </button>
+            <button class="out"> CHECK OUT </button>
+        </div>
+    </div>
+
+    <div class='product-image'>
+        <div class='slide-container'>
+            <div class='image-container' style='left: -350px;'>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'> Manuka Honey </h1>
+                    <img src='assets/images/newHoney/21.png' class='slider-image'>
+                </div>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'> Alfalfa Honey </h1>
+                    <img src='assets/images/newHoney/7.png' class='slider-image'>
+                </div>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'> Eucalyptus Honey </h1>
+                    <img src='assets/images/newHoney/8.png' class='slider-image'>
+                </div>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'> Acacia Honey </h1>
+                    <img src='assets/images/newHoney/10.png' class='slider-image'>
+                </div>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'>Buckwheat Honey </h1>
+                    <img src='assets/images/newHoney/11.png' class='slider-image'>
+                </div>
+                <div class='honey-jar'>
+                    <h1 class='honey-name'> Clover Honey </h1>
+                    <img src='assets/images/newHoney/8.png' class='slider-image'>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <div class='product-details__quantities'>
-        <p class='quarter'>250g</p>
-        <p class='half'>500g</p>
-        <p class='full'>1kg</p>
-        <p class='twice'>2kg</p>
-    </div>
-    <p class='product-details__title'> Quantity</p>
-    <div class='product-details__selection'>
-        <img src='assets/images/add.svg' class='add'>
-        <div class='number'>2</div>
-        <img src='assets/images/minus.svg' class='minus'>
-    </div>
-   <div class='product-details__buttons'>
-        <button class="bag"> ADD TO BAG </button>
-        <button class="out"> CHECK OUT </button>
-    </div>
+    <img src='assets/images/hexagon.svg' class='hexagon'>
 </div>
+
+<script src='assets/js/eucalyptus.js'></script>

@@ -4,86 +4,122 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin: 0;
-  transition-duration: 500ms; }
+  margin: 0; }
 
-.product-details {
-  position: relative;
-  top: 100px;
-  width: 400px;
-  padding-left: 48px;
-  border-right: 2px solid #bbbbbb;
-  height: calc(100vh - 220px); }
-  .product-details p {
-    color: rgba(34, 34, 34, 0.54); }
-  .product-details .product-details__price {
-    font-size: 24px; }
-  .product-details .product-details__size {
-    padding: 24px 0;
-    font-size: 18px; }
-  .product-details .product-details__quantities {
+.product-desc {
+  display: flex; }
+  .product-desc .product-text {
+    position: relative;
+    top: 100px;
+    width: 400px;
+    padding-left: 48px;
+    border-right: 2px solid #bbbbbb;
+    height: calc(100vh - 220px); }
+    .product-desc .product-text p {
+      color: rgba(34, 34, 34, 0.54); }
+    .product-desc .product-text .product-text__price {
+      font-size: 24px; }
+    .product-desc .product-text .product-text__size {
+      padding: 24px 0;
+      font-size: 18px; }
+    .product-desc .product-text .product-text__quantities {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      border-top: 1px solid lightgray; }
+      .product-desc .product-text .product-text__quantities .quarter,
+      .product-desc .product-text .product-text__quantities .half,
+      .product-desc .product-text .product-text__quantities .full,
+      .product-desc .product-text .product-text__quantities .twice {
+        padding: 20px;
+        position: relative; }
+      .product-desc .product-text .product-text__quantities .quarter::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        background-color: rgba(253, 210, 22, 0.87);
+        top: 0;
+        left: 0;
+        width: 100%; }
+    .product-desc .product-text .product-text__title {
+      padding-top: 24px; }
+    .product-desc .product-text .product-text__selection {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding-top: 12px;
+      width: 25%; }
+      .product-desc .product-text .product-text__selection .add,
+      .product-desc .product-text .product-text__selection .minus {
+        width: 20px;
+        height: 20px; }
+      .product-desc .product-text .product-text__selection .number {
+        background-color: #bbbbbb;
+        width: 20px;
+        height: 20px;
+        text-align: center; }
+    .product-desc .product-text .product-text__buttons {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding-top: 48px;
+      width: 70%; }
+      .product-desc .product-text .product-text__buttons .bag {
+        background-color: rgba(253, 210, 22, 0.87);
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer; }
+      .product-desc .product-text .product-text__buttons .out {
+        background-color: white;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        border: 2px solid #bbbbbb;
+        cursor: pointer; }
+  .product-desc .honey-details {
+    padding-top: 100px; }
+  .product-desc .product-image {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    border-top: 1px solid lightgray; }
-    .product-details .product-details__quantities .quarter,
-    .product-details .product-details__quantities .half,
-    .product-details .product-details__quantities .full,
-    .product-details .product-details__quantities .twice {
-      padding: 20px;
-      position: relative; }
-    .product-details .product-details__quantities .quarter::after {
-      position: absolute;
-      content: '';
-      height: 3px;
-      background-color: rgba(253, 210, 22, 0.87);
-      top: 0;
-      left: 0;
-      width: 100%; }
-  .product-details .product-details__title {
-    padding-top: 24px; }
-  .product-details .product-details__selection {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding-top: 12px;
-    width: 25%; }
-    .product-details .product-details__selection .add,
-    .product-details .product-details__selection .minus {
-      width: 20px;
-      height: 20px; }
-    .product-details .product-details__selection .number {
-      background-color: #bbbbbb;
-      width: 20px;
-      height: 20px;
-      text-align: center; }
-  .product-details .product-details__buttons {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding-top: 48px;
-    width: 70%; }
-    .product-details .product-details__buttons .bag {
-      background-color: rgba(253, 210, 22, 0.87);
-      color: white;
-      padding: 10px 15px;
-      text-align: center;
-      font-size: 12px;
-      text-decoration: none;
-      border: none;
-      cursor: pointer; }
-    .product-details .product-details__buttons .out {
-      background-color: white;
-      padding: 10px 15px;
-      text-align: center;
-      font-size: 12px;
-      text-decoration: none;
-      border: 2px solid #bbbbbb;
-      cursor: pointer; }
-
-.honey-details {
-  padding-top: 100px; }
+    position: relative;
+    top: 90px;
+    width: calc(100vw - 400px);
+    padding-left: 48px;
+    height: calc(100vh - 180px); }
+    .product-desc .product-image .slide-container {
+      width: 350px;
+      height: 420px;
+      overflow: hidden; }
+      .product-desc .product-image .slide-container .image-container {
+        width: 2400px;
+        height: 350px;
+        position: relative;
+        transition-duration: 500ms;
+        transition-timing-function: ease-out; }
+        .product-desc .product-image .slide-container .image-container .honey-jar {
+          width: 350px;
+          height: 350px;
+          float: left; }
+          .product-desc .product-image .slide-container .image-container .honey-jar .honey-name {
+            font-size: 36px;
+            padding-bottom: 24px; }
+          .product-desc .product-image .slide-container .image-container .honey-jar .slider-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding-right: 24px; }
+  .product-desc .hexagon {
+    position: relative;
+    top: 18px;
+    right: -18%;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s; }
 
 header .menu {
   background-color: rgba(34, 34, 34, 0.12);
@@ -173,5 +209,8 @@ header .sub-navbar {
     height: 24px;
     justify-self: center;
     align-self: center; }
+
+body {
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
