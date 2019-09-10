@@ -87,14 +87,19 @@
   .product-desc .product-image {
     display: flex;
     position: relative;
-    top: 90px;
+    top: 50px;
     width: calc(100vw - 400px);
     padding-left: 48px;
     height: calc(100vh - 180px); }
     .product-desc .product-image .slide-container {
       width: 350px;
-      height: 420px;
+      height: 470px;
       overflow: hidden; }
+      .product-desc .product-image .slide-container .honey {
+        position: relative;
+        font-size: 30px;
+        top: 80px;
+        color: rgba(34, 34, 34, 0.54); }
       .product-desc .product-image .slide-container .image-container {
         width: 2400px;
         height: 350px;
@@ -107,7 +112,21 @@
           float: left; }
           .product-desc .product-image .slide-container .image-container .honey-jar .honey-name {
             font-size: 36px;
-            padding-bottom: 24px; }
+            padding-bottom: 48px;
+            padding-left: 24px; }
+          .product-desc .product-image .slide-container .image-container .honey-jar .mango {
+            color: rgba(255, 205, 72, 0.54); }
+          .product-desc .product-image .slide-container .image-container .honey-jar .lemon {
+            color: rgba(227, 255, 0, 0.54); }
+          .product-desc .product-image .slide-container .image-container .honey-jar .cinnamon {
+            color: rgba(210, 105, 30, 0.54);
+            padding-left: 0; }
+          .product-desc .product-image .slide-container .image-container .honey-jar .rasberry {
+            color: rgba(227, 11, 93, 0.54); }
+          .product-desc .product-image .slide-container .image-container .honey-jar .habanero {
+            color: rgba(211, 87, 75, 0.54); }
+          .product-desc .product-image .slide-container .image-container .honey-jar .ginger {
+            color: rgba(176, 101, 0, 0.54); }
           .product-desc .product-image .slide-container .image-container .honey-jar .slider-image {
             width: 100%;
             height: 100%;
@@ -116,7 +135,7 @@
   .product-desc .product-info {
     position: absolute;
     top: 62%;
-    right: 40px;
+    right: 10px;
     z-index: 2;
     color: rgba(34, 34, 34, 0.54); }
   .product-desc .hexagon {

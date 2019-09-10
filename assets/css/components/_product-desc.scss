@@ -111,15 +111,22 @@
     .product-image {
         display: flex;
         position: relative;
-        top: 90px;
+        top: 50px;
         width: calc(100vw - 400px);
         padding-left: 48px;
         height: calc(100vh - 180px);
 
         .slide-container {
             width: 350px;
-            height: 420px;
+            height: 470px;
             overflow: hidden;
+
+            .honey{
+                position: relative;
+                font-size: 30px;
+                top: 80px;
+                color: $text-color;
+            }
 
             .image-container {
                 width: 2400px;
@@ -135,7 +142,32 @@
 
                     .honey-name {
                         font-size: 36px;
-                        padding-bottom: 24px;
+                        padding-bottom: 48px;
+                        padding-left: 24px;
+                    }
+                    .mango{
+                        color: rgba(255, 205, 72, 0.54);
+                    }
+
+                    .lemon{
+                        color: rgba(227, 255, 0, 0.54);
+                    }
+
+                    .cinnamon{
+                        color: rgba(210, 105, 30, 0.54);
+                        padding-left: 0;
+                    }
+
+                    .rasberry{
+                        color: rgba(227, 11, 93, 0.54);
+                    }
+
+                    .habanero{
+                        color: rgba(211, 87, 75, 0.54);
+                    }
+
+                    .ginger{
+                        color: rgba(176, 101, 0, 0.54);
                     }
 
                     .slider-image {
@@ -152,7 +184,7 @@
     .product-info{
         position: absolute;
         top: 62%;
-        right: 40px;
+        right: 10px;
         z-index: 2;
         color: $text-color;
     }

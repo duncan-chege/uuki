@@ -38,30 +38,6 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/rawhoney/clover',
             templateUrl: 'rawhoney-details/clover.html'
         })
-        .state('candy', {
-            url: '/honeyproduct-details/candy',
-            templateUrl: 'honeyproduct-details/candy.html'
-        })
-        .state('lollipop', {
-            url: '/honeyproduct-details/lollipop',
-            templateUrl: 'honeyproduct-details/lollipop.html'
-        })
-        .state('chocolate', {
-            url: '/honeyproduct-details/chocolate',
-            templateUrl: 'honeyproduct-details/chocolate.html'
-        })
-        .state('ginger', {
-            url: '/honeyproduct-details/ginger',
-            templateUrl: 'honeyproduct-details/ginger.html'
-        })
-        .state('syrup', {
-            url: '/honeyproduct-details/syrup',
-            templateUrl: 'honeyproduct-details/syrup.html'
-        })
-        .state('peanutbutter', {
-            url: '/honeyproduct-details/peanutbutter',
-            templateUrl: 'honeyproduct-details/peanutbutter.html'
-        })
         .state('cinnamon', {
             url: '/flavouredhoney-details/cinnamon',
             templateUrl: 'flavouredhoney-details/cinnamon.html'
@@ -85,5 +61,29 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state('rasberry', {
             url: '/flavouredhoney-details/rasberry',
             templateUrl: 'flavouredhoney-details/rasberry.html'
+        })
+        .state('candy', {
+            url: '/honeyproduct-details/candy',
+            templateUrl: 'honeyproduct-details/candy.html'
+        })
+        .state('lollipop', {
+            url: '/honeyproduct-details/lollipop',
+            templateUrl: 'honeyproduct-details/lollipop.html'
+        })
+        .state('chocolate', {
+            url: '/honeyproduct-details/chocolate',
+            templateUrl: 'honeyproduct-details/chocolate.html'
+        })
+        .state('ginger', {
+            url: '/honeyproduct-details/ginger',
+            templateUrl: 'honeyproduct-details/ginger.html'
+        })
+        .state('syrup', {
+            url: '/honeyproduct-details/syrup',
+            templateUrl: 'honeyproduct-details/syrup.html'
+        })
+        .state('peanutbutter', {
+            url: '/honeyproduct-details/peanutbutter',
+            templateUrl: 'honeyproduct-details/peanutbutter.html'
         })
 });
