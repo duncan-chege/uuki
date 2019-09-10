@@ -149,6 +149,14 @@
         }
     }
 
+    .product-info{
+        position: absolute;
+        top: 62%;
+        right: 40px;
+        z-index: 2;
+        color: $text-color;
+    }
+
     .hexagon {
         position: relative;
         top: 18px;

@@ -51,6 +51,10 @@ header {
                     float: right;
                 }
             }
+
+            .navbar__items_selected {
+                color: $selecteditem-color !important;
+            }
         }
 
         .navbar__uuki {
@@ -68,17 +72,24 @@ header {
         grid-template-columns: 6fr 1fr;
         padding: 4px;
 
-        .raw__products, .flavoured__products, .honey__products {
+        .raw__products,
+        .flavoured__products,
+        .honey__products {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             padding-left: 48px;
+
+            .raw__products_selected {
+                color: $selecteditem-color !important;
+            }
 
             a {
                 text-decoration: none;
                 color: $mininavitem-color;
                 font-size: 14px;
                 padding-top: 4px;
+                cursor: pointer;
 
                 .first,
                 .second,

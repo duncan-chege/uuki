@@ -3,42 +3,39 @@ var myApp = angular.module('myApp', ['ui.router']);
 myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 
-    $urlRouterProvider.otherwise('/rawhoney-details/manuka');
+    $urlRouterProvider.otherwise('rawhoney/manuka');
     $stateProvider
         .state('raw-honey', {
-            url: '/rawhoney-details/manuka',
             templateUrl: 'rawhoney-details/manuka.html'
         })
         .state('flavoured-honey', {
-            url: '/flavouredhoney-details/mango',
             templateUrl: 'flavouredhoney-details/mango.html'
         })
         .state('honey-products', {
-            url: '/honeyproduct-details/candy',
             templateUrl: 'honeyproduct-details/candy.html'
         })
         .state('manuka', {
-            url: '/rawhoney-details/manuka',
+            url: '/rawhoney/manuka',
             templateUrl: 'rawhoney-details/manuka.html'
         })
         .state('alfalfa', {
-            url: '/rawhoney-details/alfalfa',
+            url: '/rawhoney/alfalfa',
             templateUrl: 'rawhoney-details/alfalfa.html'
         })
         .state('eucalyptus', {
-            url: '/rawhoney-details/eucalyptus',
+            url: '/rawhoney/eucalyptus',
             templateUrl: 'rawhoney-details/eucalyptus.html'
         })
         .state('acacia', {
-            url: '/rawhoney-details/acacia',
+            url: '/rawhoney/acacia',
             templateUrl: 'rawhoney-details/acacia.html'
         })
         .state('buckwheat', {
-            url: '/rawhoney-details/buckwheat',
+            url: '/rawhoney/buckwheat',
             templateUrl: 'rawhoney-details/buckwheat.html'
         })
         .state('clover', {
-            url: '/rawhoney-details/clover',
+            url: '/rawhoney/clover',
             templateUrl: 'rawhoney-details/clover.html'
         })
         .state('candy', {
