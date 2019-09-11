@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.image-container').animate({
-        left: '-700px'
+        left: '-1000px'
     });
     $('.hexagon').css({
         'transform': 'rotate(60deg)'

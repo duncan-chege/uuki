@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    $('.image-container').animate({left: '-1400px'});
+    $('.image-container').animate({left: '-2000px'});
     $('.hexagon').css({'transform': 'rotate(60deg)'});
 });
